@@ -53,6 +53,8 @@ body .wrap {
   line-height: 52px;
   font-size: 21.54px;
   background: transparent;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
 }
 .registration .email__container textarea:focus,
 .registration .email__container input:focus,
@@ -64,11 +66,15 @@ body .wrap {
 }
 .registration .email__container ::-moz-placeholder, .registration .password__container ::-moz-placeholder, .registration .checkPassword__container ::-moz-placeholder {
   color: #989898;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
 }
 .registration .email__container ::placeholder,
 .registration .password__container ::placeholder,
 .registration .checkPassword__container ::placeholder {
   color: #989898;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
 }
 .registration .email__container img,
 .registration .password__container img,
@@ -82,4 +88,15 @@ body .wrap {
 .registration .password__container .email__container__icon,
 .registration .checkPassword__container .email__container__icon {
   left: 17px;
+}
+.registration__btn {
+  width: 474px;
+  height: 68px;
+  font-size: 29px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  color: #233F81;
+  border: 1px solid #24399B;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0);
 }/*# sourceMappingURL=main.css.map */
