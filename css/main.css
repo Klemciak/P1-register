@@ -20,4 +20,66 @@ body .wrap {
   background-color: #FFFFFF;
   border: 0.5px solid #C6CEDA;
   border-radius: 11px;
+}
+
+.registration .registration__title {
+  font-size: 38px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.registration .emailTitle,
+.registration .passwordTitle,
+.registration .checkPasswordTitle {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: medium;
+  font-size: 18px;
+}
+.registration .email__container,
+.registration .password__container,
+.registration .checkPassword__container {
+  position: relative;
+  width: 474px;
+  height: 52px;
+  border: 0.5px solid #C6CEDA;
+  border-radius: 6px;
+}
+.registration .email__container__input,
+.registration .password__container__input,
+.registration .checkPassword__container__input {
+  border: none;
+  width: 285px;
+  margin-left: 87px;
+  line-height: 52px;
+  font-size: 21.54px;
+  background: transparent;
+}
+.registration .email__container textarea:focus,
+.registration .email__container input:focus,
+.registration .password__container textarea:focus,
+.registration .password__container input:focus,
+.registration .checkPassword__container textarea:focus,
+.registration .checkPassword__container input:focus {
+  outline: none;
+}
+.registration .email__container ::-moz-placeholder, .registration .password__container ::-moz-placeholder, .registration .checkPassword__container ::-moz-placeholder {
+  color: #989898;
+}
+.registration .email__container ::placeholder,
+.registration .password__container ::placeholder,
+.registration .checkPassword__container ::placeholder {
+  color: #989898;
+}
+.registration .email__container img,
+.registration .password__container img,
+.registration .checkPassword__container img {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+}
+.registration .email__container .email__container__icon,
+.registration .password__container .email__container__icon,
+.registration .checkPassword__container .email__container__icon {
+  left: 17px;
 }/*# sourceMappingURL=main.css.map */

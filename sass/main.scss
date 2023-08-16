@@ -1,3 +1,6 @@
+// font-family: 'fira-sans-book', sans-serif;
+// font-family: 'Fira Sans', sans-serif;
+
 @import 'reset';
 
 body {
@@ -16,5 +19,61 @@ body {
         background-color: #FFFFFF;
         border: 0.5px solid #C6CEDA;
         border-radius: 11px;
+    }
+}
+
+.registration {
+    .registration__title {
+        font-size: 38px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .emailTitle,
+    .passwordTitle,
+    .checkPasswordTitle {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: medium;
+        font-size: 18px;
+    }
+
+    .email__container,
+    .password__container,
+    .checkPassword__container {
+        position: relative;
+        width: 474px;
+        height: 52px;
+        border: 0.5px solid #C6CEDA;
+        border-radius: 6px;
+
+        &__input {
+            border: none;
+            width: 285px;
+            margin-left: 87px;
+            line-height: 52px;
+            font-size: 21.54px;
+            background: transparent;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #989898;
+        }
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 22px;
+            transform: translateY(-50%);
+        }
+
+        .email__container__icon {
+            left: 17px;
+        }
     }
 }
