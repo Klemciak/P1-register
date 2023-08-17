@@ -1,0 +1,14 @@
+.registration {
+
+    .email__container__error,
+    .password__container__error,
+    .checkPassword__container__error {
+        display: block;
+        position: absolute;
+        font-size: 15px;
+        font-family: $base-font;
+        font-weight: lighter;
+        color: #FF1D25;
+        margin: 5px 0 0 87px;
+    }
+}

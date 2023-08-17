@@ -1,16 +1,18 @@
 .registration {
     .registration__title {
         font-size: 38px;
-        font-family: 'Fira Sans', sans-serif;
+        font-family: $base-font;
         font-weight: bold;
         text-align: center;
+        margin: 77px 0 75px 0;
     }
 
     .emailTitle,
     .passwordTitle,
     .checkPasswordTitle {
-        font-family: 'Fira Sans', sans-serif;
+        font-family: $base-font;
         font-weight: medium;
         font-size: 18px;
+        margin: 35px 0 10px 0;
     }
 }

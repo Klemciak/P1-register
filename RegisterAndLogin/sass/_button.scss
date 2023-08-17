@@ -3,11 +3,19 @@
         width: 474px;
         height: 68px;
         font-size: 29px;
-        font-family: 'Fira Sans', sans-serif;
+        margin-top: 168px;
+        font-family: $base-font;
         font-weight: lighter;
         color: #233F81;
         border: 1px solid #24399B;
         border-radius: 7px;
         background-color: #ffffff00;
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #233F81;
+            color: white;
+        }
     }
 }

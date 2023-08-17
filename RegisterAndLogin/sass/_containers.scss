@@ -16,7 +16,7 @@
             line-height: 52px;
             font-size: 21.54px;
             background: transparent;
-            font-family: 'Fira Sans', sans-serif;
+            font-family: $base-font;
             font-weight: lighter;
         }
 
@@ -27,7 +27,7 @@
 
         ::placeholder {
             color: #989898;
-            font-family: 'Fira Sans', sans-serif;
+            font-family: $base-font;
             font-weight: lighter;
         }
 
