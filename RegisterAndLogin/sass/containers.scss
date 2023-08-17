@@ -1,0 +1,45 @@
+.registration {
+
+    .email__container,
+    .password__container,
+    .checkPassword__container {
+        position: relative;
+        width: 474px;
+        height: 52px;
+        border: 0.5px solid #C6CEDA;
+        border-radius: 6px;
+
+        &__input {
+            border: none;
+            width: 285px;
+            margin-left: 87px;
+            line-height: 52px;
+            font-size: 21.54px;
+            background: transparent;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: lighter;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #989898;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: lighter;
+        }
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 22px;
+            transform: translateY(-50%);
+        }
+
+        .email__container__icon {
+            left: 17px;
+        }
+    }
+}

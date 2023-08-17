@@ -1,40 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #EAEAEA;
-}
-body .wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 830px;
-  width: 634px;
-  background-color: #FFFFFF;
-  border: 0.5px solid #C6CEDA;
-  border-radius: 11px;
-}
-
-.registration .registration__title {
-  font-size: 38px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-.registration .emailTitle,
-.registration .passwordTitle,
-.registration .checkPasswordTitle {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: medium;
-  font-size: 18px;
-}
 .registration .email__container,
 .registration .password__container,
 .registration .checkPassword__container {
@@ -88,15 +51,4 @@ body .wrap {
 .registration .password__container .email__container__icon,
 .registration .checkPassword__container .email__container__icon {
   left: 17px;
-}
-.registration__btn {
-  width: 474px;
-  height: 68px;
-  font-size: 29px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: lighter;
-  color: #233F81;
-  border: 1px solid #24399B;
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0);
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=containers.css.map */
