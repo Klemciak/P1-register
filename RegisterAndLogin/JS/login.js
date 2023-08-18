@@ -5,8 +5,6 @@ const emailError = document.querySelector('.email__container__error');
 const passwordInput = document.querySelector('.password__container__input');
 const passwordError = document.querySelector('.password__container__error');
 
-const checkPasswordInput = document.querySelector('.checkPassword__container__input')
-const checkPasswordError = document.querySelector('.checkPassword__container__error')
 
 const checkValue = (e) => {
     e.preventDefault();
@@ -17,32 +15,33 @@ const checkValue = (e) => {
     if (passwordInput.value.length < 8) {
         passwordError.innerHTML = "*zbyt mała ilość znaków"
     }
-    if (checkPasswordInput.value.length < 8) {
-        checkPasswordError.innerHTML = "*zbyt mała ilość znaków"
-    }
 
-    if (passwordInput.value != checkPasswordInput.value) {
-        passwordError.innerHTML = "*różne hasła"
-        checkPasswordError.innerHTML = "*różne hasła"
-    }
     else {
         const emailInputFetch = emailInput.value
         const passwordInputFetch = passwordInput.value
 
-        fetch('http://api.ultimate.systems/public/index.php/api/v1/register', {
+        fetch('http://api.ultimate.systems/public/index.php/api/v1/login/check', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email: emailInputFetch,
-                plainPassword: passwordInputFetch
+                username: emailInputFetch,
+                password: passwordInputFetch,
             })
         }).then(res => {
-            return res.json()
+            console.log(res)
+            if (res.status === 200) {
+                console.log("powinno być przekierowanie")
+            }
+            return (
+                res.json()
+            );
+
+
         })
-            .then(data => console.log(data))
             .catch(error => console.log('ERROR'))
+
     }
 
 
@@ -50,6 +49,3 @@ const checkValue = (e) => {
 }
 
 form.addEventListener('submit', checkValue)
-
-
-

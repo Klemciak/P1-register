@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'variables';
+@import 'bodyWrap';
+@import 'headlines';
+@import 'containers';
+@import 'button';
+@import 'error';
+
+body {
+    .wrap {
+        width: 634px;
+        height: 664px;
+    }
+}
+
+.registration {
+    &__btn {
+        margin-top: 71px;
+    }
+}
+
+.registration {
+    .registration__title {
+        font-size: 38px;
+        font-family: $base-font;
+        font-weight: bold;
+        text-align: center;
+        margin: 77px 0 55px 0;
+    }
+}

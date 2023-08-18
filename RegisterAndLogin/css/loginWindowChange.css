@@ -1,3 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #EAEAEA;
+}
+body .wrap {
+  display: flex;
+  justify-content: center;
+  height: 830px;
+  width: 634px;
+  background-color: #FFFFFF;
+  border: 0.5px solid #C6CEDA;
+  border-radius: 11px;
+}
+
+.registration .registration__title {
+  font-size: 38px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 77px 0 75px 0;
+}
+.registration .emailTitle,
+.registration .passwordTitle,
+.registration .checkPasswordTitle {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: medium;
+  font-size: 18px;
+  margin: 35px 0 10px 0;
+}
+
 .registration .email__container,
 .registration .password__container,
 .registration .checkPassword__container {
@@ -51,4 +90,52 @@
 .registration .password__container .email__container__icon,
 .registration .checkPassword__container .email__container__icon {
   left: 17px;
-}/*# sourceMappingURL=containers.css.map */
+}
+
+.registration__btn {
+  width: 474px;
+  height: 68px;
+  font-size: 29px;
+  margin-top: 168px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  color: #233F81;
+  border: 1px solid #24399B;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+}
+.registration__btn:hover {
+  cursor: pointer;
+  background-color: #233F81;
+  color: white;
+}
+
+.registration .email__container__error,
+.registration .password__container__error,
+.registration .checkPassword__container__error {
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  color: #FF1D25;
+  margin: 5px 0 0 87px;
+}
+
+body .wrap {
+  width: 634px;
+  height: 664px;
+}
+
+.registration__btn {
+  margin-top: 71px;
+}
+
+.registration .registration__title {
+  font-size: 38px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 77px 0 55px 0;
+}/*# sourceMappingURL=loginWindowChange.css.map */
