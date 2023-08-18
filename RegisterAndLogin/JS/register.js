@@ -37,9 +37,13 @@ const checkValue = (e) => {
             },
             body: JSON.stringify({
                 email: emailInputFetch,
-                plainPassword: passwordInputFetch,
+                plainPassword: passwordInputFetch
             })
         }).then(res => {
+            console.log(res);
+            if (res.status === 200) {
+                console.log("powinno być przekierowanie(window.location.href)")
+            }
             return res.json()
         })
             .then(data => console.log(data))

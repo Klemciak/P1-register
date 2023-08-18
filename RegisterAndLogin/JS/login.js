@@ -32,7 +32,7 @@ const checkValue = (e) => {
         }).then(res => {
             console.log(res)
             if (res.status === 200) {
-                console.log("powinno być przekierowanie")
+                console.log("powinno być przekierowanie(window.location.href")
             }
             return (
                 res.json()
