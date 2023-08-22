@@ -125,4 +125,38 @@ main .sort {
 }
 main .sort img {
   margin-left: 15px;
+  width: 30px;
+  padding: 5px;
+  transform: translateY(20%);
+}
+main .sort img:hover {
+  cursor: pointer;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 118px 220px 298px 349px auto;
+  line-height: 87px;
+  border: 0.25px solid rgba(103, 103, 103, 0.4039215686);
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.person .person__dot {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 53px;
+  line-height: 57px;
+  height: 53px;
+  background-color: #415C27;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

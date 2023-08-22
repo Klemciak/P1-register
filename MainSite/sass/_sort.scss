@@ -9,6 +9,13 @@ main {
 
         img {
             margin-left: 15px;
+            width: 30px;
+            padding: 5px;
+            transform: translateY(20%);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
