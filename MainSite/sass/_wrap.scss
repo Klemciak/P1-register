@@ -1,0 +1,13 @@
+body {
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1443px;
+        background-color: #EDEDED;
+    }
+}

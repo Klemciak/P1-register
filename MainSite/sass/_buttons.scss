@@ -1,0 +1,46 @@
+.search {
+    .search__form {
+        .search__form__button {
+            width: 156px;
+            height: 45px;
+            background-color: #FFFFFF;
+            border: 1px solid #24399B;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            overflow: hidden;
+            transform: translateX(62%);
+            font-family: $base-font;
+            font-weight: bold;
+        }
+    }
+
+    button {
+        width: 152px;
+        height: 45px;
+        border: 0.25px solid $border-main-color;
+        border-radius: 12px;
+        background-color: #fff;
+        font-size: 15px;
+        font-family: $base-font;
+        font-weight: normal;
+    }
+
+    &__all,
+    &__active {
+        margin-right: 24px;
+    }
+
+    &__inactive {
+        margin-right: 178px;
+    }
+
+}
+
+.editAccount {
+    width: 1443px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__button {}
+}

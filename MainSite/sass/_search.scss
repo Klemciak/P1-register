@@ -1,0 +1,33 @@
+.search {
+    width: 1443px;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.25px solid $border-main-color;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+
+    .search__form {
+        margin-left: 26px;
+        margin-right: 280px;
+        width: 453px;
+        line-height: 43px;
+        border: 0.25px solid $border-main-color;
+        border-radius: 12px;
+        // overflow: hidden;
+
+        .search__form__input {
+            line-height: 42px;
+            border: none;
+            background: transparent;
+            margin-left: 30px;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+
+    }
+}
