@@ -11,7 +11,7 @@
     .search__form {
         margin-left: 26px;
         margin-right: 280px;
-        width: 453px;
+        width: 403px;
         line-height: 43px;
         border: 0.25px solid $border-main-color;
         border-radius: 12px;
@@ -21,7 +21,10 @@
             line-height: 42px;
             border: none;
             background: transparent;
+            width: 150px;
             margin-left: 30px;
+            font-family: $base-font;
+            font-weight: lighter;
         }
 
         textarea:focus,

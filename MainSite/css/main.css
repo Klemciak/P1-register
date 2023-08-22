@@ -30,7 +30,7 @@ body .wrap {
 .search .search__form {
   margin-left: 26px;
   margin-right: 280px;
-  width: 453px;
+  width: 403px;
   line-height: 43px;
   border: 0.25px solid rgba(103, 103, 103, 0.4039215686);
   border-radius: 12px;
@@ -39,7 +39,10 @@ body .wrap {
   line-height: 42px;
   border: none;
   background: transparent;
+  width: 150px;
   margin-left: 30px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
 }
 .search .search__form textarea:focus,
 .search .search__form input:focus {
@@ -109,4 +112,17 @@ body .wrap {
   background-color: #24399B;
   border-color: #24399B;
   color: white;
+}
+
+main {
+  width: 1443px;
+}
+main .sort {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 220px 298px 349px auto;
+  margin: 80px 0 40px 118px;
+}
+main .sort img {
+  margin-left: 15px;
 }/*# sourceMappingURL=main.css.map */
