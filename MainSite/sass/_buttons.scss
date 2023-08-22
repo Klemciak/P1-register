@@ -3,7 +3,7 @@
         .search__form__button {
             width: 156px;
             height: 45px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
             border: 1px solid #24399B;
             border-radius: 12px;
             font-weight: bold;
@@ -12,6 +12,13 @@
             transform: translateX(62%);
             font-family: $base-font;
             font-weight: bold;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #24399B;
+                color: white;
+                font-size: 19px;
+            }
         }
     }
 
@@ -24,6 +31,7 @@
         font-size: 15px;
         font-family: $base-font;
         font-weight: normal;
+        transition: 0.3s;
     }
 
     &__all,
@@ -41,6 +49,27 @@
     width: 1443px;
     display: flex;
     justify-content: flex-end;
+    margin-top: 80px;
 
-    &__button {}
+    &__button {
+        width: 228px;
+        height: 49px;
+        font-size: 18px;
+        border: 1px solid #24399B;
+        border-radius: 14px;
+        background-color: #fff;
+        font-family: $base-font;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+}
+
+.search__all:hover,
+.search__active:hover,
+.search__inactive:hover,
+.editAccount__button:hover {
+    cursor: pointer;
+    background-color: #24399B;
+    border-color: #24399B;
+    color: white;
 }
