@@ -1,0 +1,14 @@
+main {
+    width: 1443px;
+
+    .sort {
+        width: 1440px;
+        display: grid;
+        grid-template-columns: 220px 298px 349px auto;
+        margin: 80px 0 40px 118px;
+
+        img {
+            margin-left: 15px;
+        }
+    }
+}
