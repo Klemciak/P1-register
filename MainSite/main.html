@@ -49,8 +49,16 @@
                 <span class="person__date">20.12.1988</span>
             </div>
         </main>
+
+
+
+
+
+
+
+
         <div class="popUpWrap">
-            <div class="editPopUp">
+            <form class="editPopUp">
                 <div class="editPopUp__title">
                     <h1>Edycja danych</h1>
                 </div>
@@ -78,8 +86,35 @@
                     <input class="editPopUp__phone__prefix" type="text" value="+48"> <input type="tel"
                         class="editPopUp__phone__number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
                 </div>
-            </div>
+                <label class="editPopUp__policy">
+                    <input type="checkbox" class="editPopUp__policy__checkbox"><span class="checkbox__custom"><img
+                            src="img/accept.svg" alt="accept policy"></span>
+                    <h2>* Polityka prywatności</h2>
+                    <span class="editPopUp__policy__error">red message</span>
+                </label>
+                <label class="editPopUp__marketing">
+                    <input type="checkbox" class="editPopUp__marketing__checkbox"><span class="checkbox__custom"><img
+                            src="img/accept.svg" alt="accept marketing"></span>
+                    <h2>Zgody marketingowe</h2>
+                </label>
+                <label class="editPopUp__regulations">
+                    <input type="checkbox" class="editPopUp__regulations__checkbox"><span class="checkbox__custom"><img
+                            src="img/accept.svg" alt="accept regulations"></span>
+                    <h2>* Regulamin sprzedaży</h2>
+                    <span class="editPopUp__regulations__error">red message</span>
+                </label>
+                <h2 class="editPopUp__info">*Pola obowiązkowe</h2>
+                <div class="editPopUp__buttons">
+                    <button class="editPopUp__buttons__cancel">Anuluj</button>
+                    <button class="editPopUp__buttons__save">Zapisz</button>
+                </div>
+            </form>
         </div>
+
+
+
+
+
     </div>
 </body>
 

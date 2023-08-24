@@ -22,7 +22,17 @@
         &__title {
             grid-column-start: 1;
             grid-column-end: 4;
-            margin: 44px 0 0 52px;
+        }
+
+        &__phone {
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        &__info {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
     }
 }

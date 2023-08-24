@@ -183,5 +183,24 @@ main .sort img:hover {
 .popUpWrap .editPopUp__title {
   grid-column-start: 1;
   grid-column-end: 4;
-  margin: 44px 0 0 52px;
+}
+.popUpWrap .editPopUp__phone {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.popUpWrap .editPopUp__info {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.editPopUp h1,
+.editPopUp h2,
+.editPopUp span,
+.editPopUp input {
+  font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+}
+.editPopUp input ~ span {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
