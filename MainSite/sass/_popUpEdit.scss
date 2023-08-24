@@ -1,0 +1,28 @@
+.popUpWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 100%;
+    height: 100%;
+
+
+    .editPopUp {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+        width: 1122px;
+        height: 551px;
+        background-color: #fff;
+        border: 0.25px solid $border-main-color;
+        border-radius: 8px;
+
+
+        &__title {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin: 44px 0 0 52px;
+        }
+    }
+}

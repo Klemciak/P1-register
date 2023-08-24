@@ -49,6 +49,37 @@
                 <span class="person__date">20.12.1988</span>
             </div>
         </main>
+        <div class="popUpWrap">
+            <div class="editPopUp">
+                <div class="editPopUp__title">
+                    <h1>Edycja danych</h1>
+                </div>
+                <div class="editPopUp__email">
+                    <h2>* E-mail</h2>
+                    <input type="email" class="editPopUp__email__input">
+                    <span class="editPopUp__email__error">red message</span>
+                </div>
+                <div class="editPopUp__name">
+                    <h2>* Imię</h2>
+                    <input type="text" class="editPopUp__name__input">
+                    <span class="editPopUp__name__error">red message</span>
+                </div>
+                <div class="editPopUp__surname">
+                    <h2>* Nazwisko</h2>
+                    <input type="text" class="editPopUp__surname__input">
+                    <span class="editPopUp__surname__error">red message</span>
+                </div>
+                <div class="editPopUp__birthdate">
+                    <h2>* data urodzenia</h2>
+                    <input type="date" class="editPopUp__birthdate__input" required>
+                </div>
+                <div class="editPopUp__phone">
+                    <h2>* Telefon</h2>
+                    <input class="editPopUp__phone__prefix" type="text" value="+48"> <input type="tel"
+                        class="editPopUp__phone__number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -151,7 +151,7 @@ main .sort img:hover {
   left: 50%;
   text-align: center;
   width: 53px;
-  line-height: 57px;
+  line-height: 53px;
   height: 53px;
   background-color: #415C27;
   transform: translate(-50%, -50%);
@@ -159,4 +159,29 @@ main .sort img:hover {
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
   color: #fff;
+}
+
+.popUpWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.43);
+  width: 100%;
+  height: 100%;
+}
+.popUpWrap .editPopUp {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around;
+  width: 1122px;
+  height: 551px;
+  background-color: #fff;
+  border: 0.25px solid rgba(103, 103, 103, 0.4039215686);
+  border-radius: 8px;
+}
+.popUpWrap .editPopUp__title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 44px 0 0 52px;
 }/*# sourceMappingURL=main.css.map */
