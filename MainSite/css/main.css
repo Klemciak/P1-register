@@ -340,4 +340,39 @@ main .sort img:hover {
 .editPopUp__policy__error,
 .editPopUp__regulations__error {
   margin-left: 30px;
+}
+
+.afterPopUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 517px;
+  height: 449px;
+  border: 0.25px solid rgba(103, 103, 103, 0.4039215686);
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.afterPopUp .afterPopUp__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  color: #4EB100;
+  margin-bottom: 100px;
+}
+.afterPopUp .afterPopUp__button {
+  width: 315px;
+  height: 57px;
+  margin-left: 102px;
+  border: 1px solid #7AC943;
+  border-radius: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  font-size: 21px;
+  transition: 0.3s;
+}
+.afterPopUp .afterPopUp__button:hover {
+  cursor: pointer;
+  background-color: #4EB100;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

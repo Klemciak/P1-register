@@ -1,0 +1,39 @@
+.afterPopUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 517px;
+    height: 449px;
+    border: 0.25px solid $border-main-color;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+
+
+    .afterPopUp__title {
+        font-family: $base-font;
+        font-weight: normal;
+        font-size: 36px;
+        color: #4EB100;
+        margin-bottom: 100px;
+
+    }
+
+    .afterPopUp__button {
+        width: 315px;
+        height: 57px;
+        margin-left: 102px;
+        border: 1px solid #7AC943;
+        border-radius: 16px;
+        font-family: $base-font;
+        font-weight: normal;
+        font-size: 21px;
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #4EB100;
+            color: white;
+        }
+    }
+}
