@@ -1,0 +1,40 @@
+.editPopUp__policy h2,
+.editPopUp__marketing h2,
+.editPopUp__regulations h2 {
+    margin: 5px 0 0 30px;
+}
+
+.editPopUp__policy__checkbox,
+.editPopUp__marketing__checkbox,
+.editPopUp__regulations__checkbox {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.editPopUp__policy__checkbox~span>img,
+.editPopUp__marketing__checkbox~span>img,
+.editPopUp__regulations__checkbox~span>img {
+    opacity: 0;
+}
+
+.editPopUp__policy__checkbox:checked~span>img,
+.editPopUp__marketing__checkbox:checked~span>img,
+.editPopUp__regulations__checkbox:checked~span>img {
+    opacity: 1;
+}
+
+.checkbox__custom {
+    position: absolute;
+    width: 24px;
+    line-height: 24px;
+    border: 0.5px solid $border-main-color;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.editPopUp__policy__error,
+.editPopUp__regulations__error {
+    margin-left: 30px;
+}

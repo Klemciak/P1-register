@@ -24,9 +24,13 @@
         font-weight: lighter;
     }
 
-    input~span {
+    .editPopUp__email__error,
+    .editPopUp__name__error,
+    .editPopUp__surname__error,
+    .editPopUp__policy__error,
+    .editPopUp__regulations__error {
         color: red;
-        opacity: 0;
+        display: none;
     }
 
     textarea:focus,

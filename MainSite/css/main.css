@@ -225,9 +225,13 @@ main .sort img:hover {
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
 }
-.editPopUp input ~ span {
+.editPopUp .editPopUp__email__error,
+.editPopUp .editPopUp__name__error,
+.editPopUp .editPopUp__surname__error,
+.editPopUp .editPopUp__policy__error,
+.editPopUp .editPopUp__regulations__error {
   color: red;
-  opacity: 0;
+  display: none;
 }
 .editPopUp textarea:focus,
 .editPopUp input:focus {
@@ -288,4 +292,52 @@ main .sort img:hover {
   border-color: #293672;
   color: white;
   font-size: 16px;
+}
+.editPopUp__exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  cursor: pointer;
+}
+
+.editPopUp__policy h2,
+.editPopUp__marketing h2,
+.editPopUp__regulations h2 {
+  margin: 5px 0 0 30px;
+}
+
+.editPopUp__policy__checkbox,
+.editPopUp__marketing__checkbox,
+.editPopUp__regulations__checkbox {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.editPopUp__policy__checkbox ~ span > img,
+.editPopUp__marketing__checkbox ~ span > img,
+.editPopUp__regulations__checkbox ~ span > img {
+  opacity: 0;
+}
+
+.editPopUp__policy__checkbox:checked ~ span > img,
+.editPopUp__marketing__checkbox:checked ~ span > img,
+.editPopUp__regulations__checkbox:checked ~ span > img {
+  opacity: 1;
+}
+
+.checkbox__custom {
+  position: absolute;
+  width: 24px;
+  line-height: 24px;
+  border: 0.5px solid rgba(103, 103, 103, 0.4039215686);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.editPopUp__policy__error,
+.editPopUp__regulations__error {
+  margin-left: 30px;
 }/*# sourceMappingURL=main.css.map */
