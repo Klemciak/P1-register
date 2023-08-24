@@ -1,0 +1,21 @@
+.editPopUp__email__input,
+.editPopUp__name__input,
+.editPopUp__surname__input,
+.editPopUp__birthdate__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $border-main-color;
+}
+
+.editPopUp__phone__prefix {
+    width: 40px;
+    border: none;
+    border-bottom: 1px solid $border-main-color;
+}
+
+.editPopUp__phone__number {
+    border: none;
+    border-bottom: 1px solid $border-main-color;
+    margin-left: 30px;
+    width: 230px;
+}

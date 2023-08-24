@@ -171,8 +171,14 @@ main .sort img:hover {
   height: 100%;
 }
 .popUpWrap .editPopUp {
+  position: relative;
   display: grid;
   grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 40px 70px 70px 30px 70px;
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding: 52px 50px 0 45px;
   justify-content: space-around;
   width: 1122px;
   height: 551px;
@@ -189,18 +195,97 @@ main .sort img:hover {
   grid-column-end: 4;
 }
 .popUpWrap .editPopUp__info {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  margin-top: 30px;
+}
+.popUpWrap .editPopUp__buttons {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
 }
 
+.editPopUp h1 {
+  border-bottom: 1px solid rgba(103, 103, 103, 0.4039215686);
+  padding-bottom: 20px;
+}
 .editPopUp h1,
 .editPopUp h2,
-.editPopUp span,
-.editPopUp input {
+.editPopUp span {
   font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+}
+.editPopUp h1,
+.editPopUp h2 {
+  margin-bottom: 15px;
+}
+.editPopUp input {
+  font-size: 18px;
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
 }
 .editPopUp input ~ span {
   color: red;
+  opacity: 0;
+}
+.editPopUp textarea:focus,
+.editPopUp input:focus {
+  outline: none;
+}
+
+.editPopUp__email__input,
+.editPopUp__name__input,
+.editPopUp__surname__input,
+.editPopUp__birthdate__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(103, 103, 103, 0.4039215686);
+}
+
+.editPopUp__phone__prefix {
+  width: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(103, 103, 103, 0.4039215686);
+}
+
+.editPopUp__phone__number {
+  border: none;
+  border-bottom: 1px solid rgba(103, 103, 103, 0.4039215686);
+  margin-left: 30px;
+  width: 230px;
+}
+
+.editPopUp__buttons__cancel {
+  width: 80px;
+  margin-right: 70px;
+  height: 38px;
+  border: none;
+  color: #3E69C4;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.editPopUp__buttons__cancel:hover {
+  font-size: 17px;
+}
+.editPopUp__buttons__save {
+  width: 191px;
+  height: 38px;
+  border-radius: 14px;
+  border: 1px solid rgba(103, 103, 103, 0.4039215686);
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.editPopUp__buttons__save:hover {
+  background-color: #293672;
+  border-color: #293672;
+  color: white;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

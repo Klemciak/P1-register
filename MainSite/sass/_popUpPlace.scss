@@ -9,14 +9,20 @@
 
 
     .editPopUp {
+        position: relative;
         display: grid;
         grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 40px 70px 70px 30px 70px;
+        row-gap: 40px;
+        column-gap: 40px;
+        padding: 52px 50px 0 45px;
         justify-content: space-around;
         width: 1122px;
         height: 551px;
         background-color: #fff;
         border: 0.25px solid $border-main-color;
         border-radius: 8px;
+
 
 
         &__title {
@@ -31,8 +37,16 @@
         }
 
         &__info {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            margin-top: 30px;
+        }
+
+        &__buttons {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            position: absolute;
+            right: 0;
+            bottom: 10%;
+
         }
     }
 }

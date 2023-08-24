@@ -1,15 +1,36 @@
 .editPopUp {
 
+    h1 {
+        border-bottom: 1px solid $border-main-color;
+        padding-bottom: 20px;
+    }
+
     h1,
     h2,
-    span,
-    input {
+    span {
         font-size: 15px;
+        font-family: $base-font;
+        font-weight: lighter;
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    input {
+        font-size: 18px;
         font-family: $base-font;
         font-weight: lighter;
     }
 
     input~span {
         color: red;
+        opacity: 0;
+    }
+
+    textarea:focus,
+    input:focus {
+        outline: none;
     }
 }
