@@ -1,0 +1,9 @@
+.active {
+    display: none;
+}
+
+.popUpWrap {
+    .editPopUp .active {
+        display: none;
+    }
+}

@@ -231,7 +231,6 @@ main .sort img:hover {
 .editPopUp .editPopUp__policy__error,
 .editPopUp .editPopUp__regulations__error {
   color: red;
-  display: none;
 }
 .editPopUp textarea:focus,
 .editPopUp input:focus {
@@ -375,4 +374,12 @@ main .sort img:hover {
   cursor: pointer;
   background-color: #4EB100;
   color: white;
+}
+
+.active {
+  display: none;
+}
+
+.popUpWrap .editPopUp .active {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

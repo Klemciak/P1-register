@@ -54,28 +54,25 @@
 
 
 
-
-
-
-        <div class="popUpWrap">
-            <form class="editPopUp">
+        <div class="popUpWrap active"> <!-- active -->
+            <form class="editPopUp active"> <!-- active -->
                 <div class="editPopUp__title">
                     <h1>Edycja danych</h1>
                 </div>
                 <div class="editPopUp__email">
                     <h2>* E-mail</h2>
                     <input type="email" class="editPopUp__email__input">
-                    <span class="editPopUp__email__error">red message</span>
+                    <span class="editPopUp__email__error"></span>
                 </div>
                 <div class="editPopUp__name">
                     <h2>* Imię</h2>
                     <input type="text" class="editPopUp__name__input">
-                    <span class="editPopUp__name__error">red message</span>
+                    <span class="editPopUp__name__error"></span>
                 </div>
                 <div class="editPopUp__surname">
                     <h2>* Nazwisko</h2>
                     <input type="text" class="editPopUp__surname__input">
-                    <span class="editPopUp__surname__error">red message</span>
+                    <span class="editPopUp__surname__error"></span>
                 </div>
                 <div class="editPopUp__birthdate">
                     <h2>* data urodzenia</h2>
@@ -90,7 +87,7 @@
                     <input type="checkbox" class="editPopUp__policy__checkbox"><span class="checkbox__custom"><img
                             src="img/accept.svg" alt="accept policy"></span>
                     <h2>* Polityka prywatności</h2>
-                    <span class="editPopUp__policy__error">red message</span>
+                    <span class="editPopUp__policy__error"></span>
                 </label>
                 <label class="editPopUp__marketing">
                     <input type="checkbox" class="editPopUp__marketing__checkbox"><span class="checkbox__custom"><img
@@ -101,17 +98,20 @@
                     <input type="checkbox" class="editPopUp__regulations__checkbox"><span class="checkbox__custom"><img
                             src="img/accept.svg" alt="accept regulations"></span>
                     <h2>* Regulamin sprzedaży</h2>
-                    <span class="editPopUp__regulations__error">red message</span>
+                    <span class="editPopUp__regulations__error"></span>
                 </label>
                 <h2 class="editPopUp__info">*Pola obowiązkowe</h2>
                 <div class="editPopUp__buttons">
-                    <button class="editPopUp__buttons__cancel">Anuluj</button>
-                    <button class="editPopUp__buttons__save">Zapisz</button>
+                    <button type="reset" class="editPopUp__buttons__cancel">Anuluj</button>
+                    <button type="submit" class="editPopUp__buttons__save">Zapisz</button>
                 </div>
                 <div class="editPopUp__exit"><img src="img/XclosePopup.svg" alt="X"></div>
             </form>
 
-            <div class="afterPopUp">
+
+
+
+            <div class="afterPopUp active"> <!-- active -->
                 <h1 class="afterPopUp__title">Pomyślnie zapisano dane</h1>
                 <button class="afterPopUp__button">Powrót do strony głównej</button>
             </div>
@@ -123,6 +123,8 @@
 
 
     </div>
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
