@@ -10,10 +10,12 @@ const checkValue = (e) => {
     e.preventDefault();
     if (!emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
         emailError.innerHTML = '*niepoprawny adres e-mail'
+        return
     }
 
     if (passwordInput.value.length < 8) {
         passwordError.innerHTML = "*zbyt mała ilość znaków"
+        return
     }
 
     else {
@@ -29,23 +31,26 @@ const checkValue = (e) => {
                 username: emailInputFetch,
                 password: passwordInputFetch,
             })
-        }).then(res => {
-            console.log(res)
-            if (res.status === 200) {
-                console.log("powinno być przekierowanie(window.location.href")
-            }
-            return (
+        }).then((res) => {
+            console.log(res);
+            if (res.status === 401) {
+                emailError.innerHTML = "*niepoprawne dane"
+                passwordError.innerHTML = "*niepoprawne dane"
+                return
+            } else if (res.status === 200) {
                 res.json()
-            );
+                    .then((data) => {
+                        console.log(data)
+                        localStorage.setItem('token', data.token)
+                        localStorage.setItem('refresh_token', data.refresh_token)
+                        console.log(data.token)
+                    })
+                window.location.assign("../MainSite/main.html")
 
-
+            }
         })
             .catch(error => console.log('ERROR'))
-
     }
-
-
-
 }
 
 form.addEventListener('submit', checkValue)

@@ -13,18 +13,22 @@ const checkValue = (e) => {
     e.preventDefault();
     if (!emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
         emailError.innerHTML = '*niepoprawny adres e-mail'
+        return
     }
-
     if (passwordInput.value.length < 8) {
         passwordError.innerHTML = "*zbyt mała ilość znaków"
+        return
     }
+
     if (checkPasswordInput.value.length < 8) {
         checkPasswordError.innerHTML = "*zbyt mała ilość znaków"
+        return
     }
 
     if (passwordInput.value != checkPasswordInput.value) {
         passwordError.innerHTML = "*różne hasła"
         checkPasswordError.innerHTML = "*różne hasła"
+        return
     }
     else {
         const emailInputFetch = emailInput.value
@@ -42,7 +46,7 @@ const checkValue = (e) => {
         }).then(res => {
             console.log(res);
             if (res.status === 200) {
-                console.log("powinno być przekierowanie(window.location.href)")
+                window.location.assign("login.html")
             }
             return res.json()
         })
