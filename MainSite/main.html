@@ -63,12 +63,12 @@
                 </div>
                 <div class="editPopUp__birthdate">
                     <h2>* data urodzenia</h2>
-                    <input type="date" class="editPopUp__birthdate__input" required>
+                    <input type="date" class="editPopUp__birthdate__input"> <!-- required -->
                 </div>
                 <div class="editPopUp__phone">
                     <h2>* Telefon</h2>
                     <input class="editPopUp__phone__prefix" type="text" value="+48"> <input type="tel"
-                        class="editPopUp__phone__number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                        class="editPopUp__phone__number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"> <!-- required -->
                 </div>
                 <label class="editPopUp__policy">
                     <input type="checkbox" class="editPopUp__policy__checkbox"><span class="checkbox__custom"><img
@@ -110,8 +110,10 @@
 
 
     </div>
+    <script src="JS/showPopup.js"></script>
+    <script src="JS/formPopup.js"></script>
+    <script src="JS/persons.js"></script>
 
-    <script src="JS/main.js"></script>
 </body>
 
 </html>

@@ -145,7 +145,7 @@ main .sort img:hover {
   font-size: 15px;
   margin-bottom: 20px;
 }
-.person .person__dot {
+.person .person__dot1 {
   position: relative;
   top: 50%;
   left: 50%;
@@ -154,6 +154,21 @@ main .sort img:hover {
   line-height: 53px;
   height: 53px;
   background-color: #415C27;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+.person .person__dot2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 53px;
+  line-height: 53px;
+  height: 53px;
+  background-color: #2bfd01;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   font-family: "Fira Sans", sans-serif;
