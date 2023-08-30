@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
             .then((users) => {
                 let array = [...users.data]
                 array.forEach(item => {
+
+
                     const persons = document.querySelector('.persons');
 
                     let person = document.createElement('div');
@@ -42,10 +44,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
                     let personDate = document.createElement('span');
                     personDate.className = "person__date";
                     personDate.innerHTML = item.birth_date
-
-
-
-
 
 
                     persons.appendChild(person);

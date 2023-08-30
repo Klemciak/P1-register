@@ -132,6 +132,9 @@ main .sort img {
 main .sort img:hover {
   cursor: pointer;
 }
+main .sort .upside-down {
+  transform: rotate(180deg);
+}
 
 .person {
   display: grid;
