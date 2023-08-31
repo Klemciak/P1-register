@@ -41,15 +41,36 @@ const checkValue = (e) => {
                 res.json()
                     .then((data) => {
                         console.log(data)
-                        localStorage.setItem('token', data.token)
-                        localStorage.setItem('refresh_token', data.refresh_token)
-                        console.log(data.token)
+
+
+                        fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/token/refresh', {
+                            method: 'POST',
+                            headers: {
+                                'accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                'refresh_token': data.refresh_token
+                            })
+                        }).then((res) => {
+                            console.log(res)
+                            res.json()
+                                .then((data) => {
+                                    console.log(data)
+                                    localStorage.setItem('new_refresh_token', data.refresh_token)
+                                })
+
+                            window.location.assign("../MainSite/main.html")
+                        })
+
+
                     })
-                window.location.assign("../MainSite/main.html")
+
 
             }
         })
             .catch(error => console.log('ERROR'))
+
     }
 }
 
