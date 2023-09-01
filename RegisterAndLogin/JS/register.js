@@ -61,4 +61,14 @@ const checkValue = (e) => {
 form.addEventListener('submit', checkValue)
 
 
+//------ go to login page vvv
+
+
+const goToLogin = document.querySelector('.goToLoginSite__container__btn')
+
+goToLogin.addEventListener('click', () => {
+    window.location.assign("login.html")
+})
+
+
 

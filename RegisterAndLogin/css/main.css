@@ -91,12 +91,16 @@ body .wrap {
 .registration .checkPassword__container .email__container__icon {
   left: 17px;
 }
+.registration .goToLoginSite__container {
+  text-align: center;
+  margin-top: 40px;
+}
 
 .registration__btn {
   width: 474px;
   height: 68px;
   font-size: 29px;
-  margin-top: 168px;
+  margin-top: 128px;
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
   color: #233F81;
@@ -109,6 +113,18 @@ body .wrap {
   cursor: pointer;
   background-color: #233F81;
   color: white;
+}
+.registration .goToLoginSite__container__btn {
+  background-color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: lighter;
+  border: 0.5px solid #C6CEDA;
+  padding: 5px;
+  border-radius: 6px;
+}
+.registration .goToLoginSite__container__btn:hover {
+  cursor: pointer;
+  border: 1px solid #000000;
 }
 
 .registration .email__container__error,

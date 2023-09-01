@@ -1,4 +1,23 @@
 
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/user', {
+        method: 'GET',
+        headers: {
+            'accept': 'application/json',
+        }
+    }).then((res) => {
+        console.log(res)
+        res.json()
+    })
+        .catch(error => console.log('ERROR'))
+
+
+})
+
+
+
+
 document.addEventListener("DOMContentLoaded", (e) => {
     fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/user', {
         method: 'PATCH',
@@ -7,7 +26,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             'Content-Type': 'application/json'
         },
         body: {
-            "email": "email@domain.ltd",
+            "email": "test@gmail.com",
             "isBlocked": false,
             "isActivated": false,
             "name": "Jhon",
@@ -24,31 +43,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 })
-
-
-
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", (e) => {
-//     fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/user', {
-//         method: 'GET',
-//         headers: {
-//             'accept': 'application/json',
-//         }
-//     }).then((res) => {
-//         console.log(res);
-
-//     })
-
-//         .catch(error => console.log('ERROR'))
-
-
-// })
-
-
 
 
 
