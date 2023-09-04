@@ -31,45 +31,28 @@ const checkValue = (e) => {
                 username: emailInputFetch,
                 password: passwordInputFetch,
             })
-        }).then((res) => {
-            console.log(res);
-            if (res.status === 401) {
-                emailError.innerHTML = "*niepoprawne dane"
-                passwordError.innerHTML = "*niepoprawne dane"
-                return
-            } else if (res.status === 200) {
-                res.json()
-                    .then((data) => {
-                        console.log(data)
-
-
-                        fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/token/refresh', {
-                            method: 'POST',
-                            headers: {
-                                'accept': 'application/json',
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({
-                                'refresh_token': data.refresh_token
-                            })
-                        }).then((res) => {
-                            console.log(res)
-                            res.json()
-                                .then((data) => {
-                                    console.log(data)
-                                    localStorage.setItem('new_refresh_token', data.refresh_token)
-                                })
-
-                            window.location.assign("../MainSite/main.html")
-                        })
-
-
-                    })
-
-
-            }
         })
-            .catch(error => console.log('ERROR'))
+            .then((res) => {
+                if (res.status === 401) {
+                    emailError.innerHTML = "*niepoprawne dane";
+                    passwordError.innerHTML = "*niepoprawne dane";
+                    return;
+                } else if (res.status === 200) {
+                    res.json()
+                        .then((data) => {
+                            let expirationDate = new Date();
+                            expirationDate.setDate(expirationDate.getDate() + 10);
+                            console.log(expirationDate.toUTCString())
+                            document.cookie = "token=" + data.token + "; path=/; expires=" + expirationDate.toUTCString();
+                            document.cookie = "refresh-token=" + data.refresh_token + "; path=/; expires=" + expirationDate.toUTCString();
+                            window.location.assign("../MainSite/main.html")
+                        });
+                } else {
+
+                    console.log("Błąd logowania");
+                }
+            })
+            .catch(error => console.log('Błąd'));
 
     }
 }

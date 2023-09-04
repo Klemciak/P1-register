@@ -3,7 +3,7 @@
         width: 474px;
         height: 68px;
         font-size: 29px;
-        margin-top: 128px;
+        margin-top: 178px;
         font-family: $base-font;
         font-weight: lighter;
         color: #233F81;
@@ -19,19 +19,21 @@
         }
     }
 
-    .goToLoginSite__container {
-        &__btn {
-            background-color: #fff;
-            font-family: $base-font;
-            font-weight: lighter;
-            border: 0.5px solid #C6CEDA;
-            padding: 5px;
-            border-radius: 6px;
 
-            &:hover {
-                cursor: pointer;
-                border: 1px solid #000000;
-            }
+}
+
+.goToLoginSite__container {
+    &__btn {
+        background-color: #fff;
+        font-family: $base-font;
+        font-weight: lighter;
+        border: 0.5px solid #C6CEDA;
+        padding: 5px;
+        border-radius: 6px;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #000000;
         }
     }
 }

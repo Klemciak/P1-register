@@ -13,6 +13,7 @@ body {
 }
 body .wrap {
   display: flex;
+  position: absolute;
   justify-content: center;
   height: 830px;
   width: 634px;
@@ -91,7 +92,10 @@ body .wrap {
 .registration .checkPassword__container .email__container__icon {
   left: 17px;
 }
-.registration .goToLoginSite__container {
+
+.goToLoginSite__container {
+  position: absolute;
+  top: 65%;
   text-align: center;
   margin-top: 40px;
 }
@@ -100,7 +104,7 @@ body .wrap {
   width: 474px;
   height: 68px;
   font-size: 29px;
-  margin-top: 128px;
+  margin-top: 178px;
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
   color: #233F81;
@@ -114,7 +118,8 @@ body .wrap {
   background-color: #233F81;
   color: white;
 }
-.registration .goToLoginSite__container__btn {
+
+.goToLoginSite__container__btn {
   background-color: #fff;
   font-family: "Fira Sans", sans-serif;
   font-weight: lighter;
@@ -122,7 +127,7 @@ body .wrap {
   padding: 5px;
   border-radius: 6px;
 }
-.registration .goToLoginSite__container__btn:hover {
+.goToLoginSite__container__btn:hover {
   cursor: pointer;
   border: 1px solid #000000;
 }

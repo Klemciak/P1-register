@@ -43,8 +43,11 @@
         }
     }
 
-    .goToLoginSite__container {
-        text-align: center;
-        margin-top: 40px;
-    }
+}
+
+.goToLoginSite__container {
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    margin-top: 40px;
 }
