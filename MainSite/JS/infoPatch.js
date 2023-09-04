@@ -63,6 +63,38 @@ fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/token/refresh', 
         .then((data) => {
 
 
+
+            fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/user', {
+                method: 'GET',
+                headers: {
+                    'accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + data.token
+                }
+            }).then((res) => {
+                return res.json();
+
+            })
+                .then((info) => {
+                    inputEmail.value = info.data.email
+                    inputName.value = info.data.name
+                    inputSurname.value = info.data.surname
+                    inputBirthdate.value = info.data.birth_date
+                    inputPrefix.value = info.data.phone_prefix
+                    inputPhone.value = info.data.phone_number
+                    boxPolicy.checked = info.data.privacy
+                    boxMarketing.checked = info.data.marketing
+                    boxRegulations.checked = info.data.selling
+                })
+                .catch(error => console.error('ERROR:', error));
+
+
+
+
+
+
+
+
             const editForm = (event) => {
                 event.preventDefault();
                 if (inputEmail.value == "") {
@@ -97,7 +129,7 @@ fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/token/refresh', 
                     return
                 } else {
 
-                    console.log(inputBirthdate.value)
+
                     fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/user', {
                         method: 'PATCH',
                         headers: {
