@@ -46,7 +46,7 @@ const checkValue = (e) => {
         }).then(res => {
             console.log(res);
             if (res.status === 200) {
-                window.location.assign("login.html")
+                window.location.assign("RegisterAndLogin/login.html")
             }
             return res.json()
         })
@@ -67,7 +67,7 @@ form.addEventListener('submit', checkValue)
 const goToLogin = document.querySelector('.goToLoginSite__container__btn')
 
 goToLogin.addEventListener('click', () => {
-    window.location.assign("login.html")
+    window.location.assign("RegisterAndLogin/login.html")
 })
 
 
