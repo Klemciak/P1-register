@@ -394,10 +394,14 @@ main .sort .upside-down {
   color: white;
 }
 
-.active {
+.popUpWrap.active {
   display: none;
 }
 
-.popUpWrap .editPopUp .active {
+.popUpWrap .editPopUp.active {
+  display: none;
+}
+
+.afterPopUp.active {
   display: none;
 }/*# sourceMappingURL=main.css.map */

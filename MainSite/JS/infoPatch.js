@@ -128,6 +128,21 @@ fetch('http://api.ultimate.systems/public/index.php/api/v1/auth/token/refresh', 
                         .then((data) => {
                             console.log(data);
 
+                            const popUpWrap = document.querySelector('.popUpWrap');
+                            const editPopUp = document.querySelector('.editPopUp');
+                            const afterPopUp = document.querySelector('.afterPopUp');
+
+                            const editBtn = document.querySelector('.editAccount__button');
+                            const cancelBtn = document.querySelector('.editPopUp__buttons__cancel');
+                            const btnX = document.querySelector('.editPopUp__exit');
+                            editPopUp.classList.toggle('active');
+                            afterPopUp.classList.toggle('active');
+
+                            const afterBtn = document.querySelector('.afterPopUp__button').addEventListener('click', function () {
+                                window.location.reload();
+                            })
+
+
                         })
                         .catch(error => console.error('ERROR:', error));
 

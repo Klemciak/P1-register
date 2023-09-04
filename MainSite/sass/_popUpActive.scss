@@ -1,9 +1,12 @@
-.active {
+.popUpWrap.active {
     display: none;
 }
 
-.popUpWrap {
-    .editPopUp .active {
-        display: none;
-    }
+
+.popUpWrap .editPopUp.active {
+    display: none;
+}
+
+.afterPopUp.active {
+    display: none;
 }

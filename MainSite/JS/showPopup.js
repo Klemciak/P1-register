@@ -9,6 +9,7 @@ const btnX = document.querySelector('.editPopUp__exit');
 const showHidePopup = (e) => {
     e.preventDefault();
     popUpWrap.classList.toggle('active');
+    editPopUp.classList.toggle('active');
 }
 
 editBtn.addEventListener('click', showHidePopup);
