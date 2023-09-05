@@ -136,7 +136,11 @@ main .sort .upside-down {
   transform: rotate(180deg);
 }
 
-.person {
+.persons {
+  height: 530px;
+  overflow: auto;
+}
+.persons .person {
   display: grid;
   grid-template-columns: 118px 220px 298px 349px auto;
   line-height: 87px;
@@ -148,7 +152,7 @@ main .sort .upside-down {
   font-size: 15px;
   margin-bottom: 20px;
 }
-.person .person__dot1 {
+.persons .person .person__dot1 {
   position: relative;
   top: 50%;
   left: 50%;
@@ -163,7 +167,7 @@ main .sort .upside-down {
   font-weight: lighter;
   color: #fff;
 }
-.person .person__dot2 {
+.persons .person .person__dot2 {
   position: relative;
   top: 50%;
   left: 50%;
